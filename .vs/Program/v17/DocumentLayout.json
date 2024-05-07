@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Semester 2\\Struktur Data dan Jaringan\\Praktek\\TUBES\\Program\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Semester 2\\Struktur Data dan Jaringan\\Praktek\\TUBES\\Program\\Program\\Header\\Login.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Program\\Header\\Login.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Semester 2\\Struktur Data dan Jaringan\\Praktek\\TUBES\\Program\\Program\\Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Program\\Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 247,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Login.h",
+              "DocumentMoniker": "D:\\Semester 2\\Struktur Data dan Jaringan\\Praktek\\TUBES\\Program\\Program\\Header\\Login.h",
+              "RelativeDocumentMoniker": "Program\\Header\\Login.h",
+              "ToolTip": "D:\\Semester 2\\Struktur Data dan Jaringan\\Praktek\\TUBES\\Program\\Program\\Header\\Login.h",
+              "RelativeToolTip": "Program\\Header\\Login.h",
+              "ViewState": "AQIAAE0AAAAAAAAAAAAAAAsAAABXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-05-01T09:46:55.898Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Main.cpp",
+              "DocumentMoniker": "D:\\Semester 2\\Struktur Data dan Jaringan\\Praktek\\TUBES\\Program\\Program\\Main.cpp",
+              "RelativeDocumentMoniker": "Program\\Main.cpp",
+              "ToolTip": "D:\\Semester 2\\Struktur Data dan Jaringan\\Praktek\\TUBES\\Program\\Program\\Main.cpp",
+              "RelativeToolTip": "Program\\Main.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-05-01T07:34:33.204Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
