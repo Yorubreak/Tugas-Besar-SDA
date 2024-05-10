@@ -1,10 +1,10 @@
-#include<stdio.h>
-#include<stdlib.h>
-#include<string.h>
-#include "Login.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include  <string.h>
+#include "login.h"
+#include "search.h"
 
-int main() 
-{
+int main(){
 	menulogin();
 	return 0;
 }
