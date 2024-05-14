@@ -10,6 +10,7 @@ void login() {
     printf("Choose login as:\n");
     printf("1. User\n");
     printf("2. Admin\n");
+    printf("Choice :");
     scanf(" %c", &choice);
 
     if (choice == '1') {
@@ -81,6 +82,7 @@ void registr() {
     printf("Register as :\n");
     printf("1. User\n");
     printf("2. Admin\n");
+    printf("Choice :");
     scanf(" %c", &choice);
     if (choice == '1') {
         printf("Enter the username: ");
