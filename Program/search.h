@@ -32,4 +32,3 @@ void displayMenuAdmin();
 int maintrieuser();
 int maintrieadmin(); 
 #endif /* TRIE_H */
-
