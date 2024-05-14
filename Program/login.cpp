@@ -19,17 +19,17 @@ void login() {
         printf("PASSWORD :");
         scanf("%s", pass);
 
-        FILE *input = fopen("databaseuser.txt", "r");
-        while(fscanf(input, "%s %s", u, p) != EOF)
+        FILE* input = fopen("databaseuser.txt", "r");
+        while (fscanf(input, "%s %s", u, p) != EOF)
         {
-            if(strcmp(u, user) == 0 && strcmp(p, pass) == 0)
+            if (strcmp(u, user) == 0 && strcmp(p, pass) == 0)
             {
                 count = 1;
                 system("CLS");
             }
         }
         fclose(input);
-        if(count == 1)
+        if (count == 1)
         {
             printf("\nHello %s\nLOGIN SUCCESS\nHalo Pelanggan.\nSelamat melakukan belanja\n", user);
             system("pause");
@@ -41,7 +41,8 @@ void login() {
             system("pause");
             menulogin();
         }
-    } else if (choice == '2') {
+    }
+    else if (choice == '2') {
         printf("USERNAME :");
         scanf("%s", user);
         printf("PASSWORD :");
@@ -49,21 +50,21 @@ void login() {
         printf("ID :");
         scanf("%s", id);
 
-        FILE *input = fopen("databaseadmin.txt", "r");
-        while(fscanf(input, "%s %s %s", id, u, p) != EOF)
+        FILE* input = fopen("databaseadmin.txt", "r");
+        while (fscanf(input, "%s %s %s", id, u, p) != EOF)
         {
-            if(strcmp(u, user) == 0 && strcmp(p, pass) == 0 && strcmp(id, id) == 0)
+            if (strcmp(u, user) == 0 && strcmp(p, pass) == 0 && strcmp(id, id) == 0)
             {
                 count = 1;
                 system("CLS");
             }
         }
         fclose(input);
-        if(count == 1)
+        if (count == 1)
         {
             printf("\nHello %s\nLOGIN SUCCESS\nHalo Admin.\nSelamat bekerja\n", user);
             system("pause");
-             maintrieadmin();
+            maintrieadmin();
         }
         else
         {
@@ -71,7 +72,8 @@ void login() {
             system("pause");
             menulogin();
         }
-    } else {
+    }
+    else {
         printf("Invalid choice.\n");
     }
 }
@@ -90,13 +92,14 @@ void registr() {
         printf("\nEnter the password: ");
         scanf("%s", regpass);
 
-        FILE *reg = fopen("databaseuser.txt", "a");
+        FILE* reg = fopen("databaseuser.txt", "a");
         fprintf(reg, "%s %s\n", reguser, regpass);
         fclose(reg);
         printf("\nRegistration Successful\n");
-         menulogin(); 
-    } else if (choice == '2') {
-        FILE *dbadmin = fopen("databaseadmin.txt", "r");
+        menulogin();
+    }
+    else if (choice == '2') {
+        FILE* dbadmin = fopen("databaseadmin.txt", "r");
         int admin_count = 0;
         char temp_id[50];
         while (fscanf(dbadmin, "%s", temp_id) != EOF) {
@@ -109,7 +112,8 @@ void registr() {
         char admin_id[50];
         if (admin_count == 0) {
             strcpy(admin_id, "admin1");
-        } else {
+        }
+        else {
             sprintf(admin_id, "admin%d", admin_count + 1);
         }
 
@@ -119,18 +123,19 @@ void registr() {
         printf("\nEnter the password: ");
         scanf("%s", regpass);
 
-        FILE *reg = fopen("databaseadmin.txt", "a");
+        FILE* reg = fopen("databaseadmin.txt", "a");
         fprintf(reg, "%s %s %s\n", admin_id, reguser, regpass);
         fclose(reg);
         printf("\nRegistration Successful\n");
-         menulogin(); 
-    } else {
+        menulogin();
+    }
+    else {
         printf("Invalid choice.\n");
     }
 }
 
 void menulogin()
-{	
+{
     int choice;
     system("CLS");
     printf("==========================================================================\n");
@@ -144,20 +149,25 @@ void menulogin()
     printf("\nMasukan angka 1/2/3 :");
     scanf("%d", &choice);
     printf("\n");
-    switch(choice)
+    switch (choice)
     {
-        case 1:
-            login();
-            break;
-        case 2:
-            registr();
-            break;
-        case 3:
-            printf("Terimakasih\n");
-            break;
-        default:
-            system("CLS");
-            printf("You've made a mistake , give it a try again\n\n");
-            menulogin();
+    case 1:
+        login();
+        break;
+    case 2:
+        registr();
+        break;
+    case 3:
+        system("CLS");
+        printf("\n==========================================================================\n");
+        printf("|                                                                        |\n");
+        printf("|                          SAMPAI JUMPA LAGI                             |\n");
+        printf("|                                                                        |\n");
+        printf("==========================================================================\n");
+        break;
+    default:
+        system("CLS");
+        printf("Kesalahan input, harap masukan nomor yang tersedia\n\n");
+        menulogin();
     }
 }

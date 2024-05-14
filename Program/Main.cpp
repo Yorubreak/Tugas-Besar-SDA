@@ -4,7 +4,7 @@
 #include "login.h"
 #include "search.h"
 
-int main(){
+int main() {
 	menulogin();
 	return 0;
 }
